@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snake and Ladder Game</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="bgimage"> 
+    <div class="mode" id="mode1">
+      <div id="onevsone"></div>
+      <div id="manvscomp"></div>
+    </div>
+
+    <div class="mode" id="mode2">
+      <img src ="images/two_players.png" alt="Player 2" />
+      <img src ="images/three_players.png" alt="Player 3" />
+      <img src ="images/four_players.png" alt="Player 4" />
+      <img src ="images/five_players.png" alt="Player 5" />
+      <img src ="images/six_players.png" alt="Player 6" />
+    </div>
+
+    <div class="mode" id="mode3">
+      <form id="form1">
+        <label for="player1Name">Player 1 Name:</label>
+        <input type="text" id="player1Name" name="name" placeholder="Enter Player 1 Name" autocomplete="username" required/>
+        <label for="colorSelect1">Choose a color:</label>
+        <select id="colorSelect1" name="color" autocomplete="off" required>
+          <option value="red" style="background: red; color: white;">Red</option>
+          <option value="blue" style="background: blue; color: white;">Blue</option>
+          <option value="green" style="background: green; color: white;">Green</option>
+          <option value="pink" style="background: rgb(233, 18, 229); color: black;">Pink</option>
+          <option value="yellow" style="background: yellow; color: black;">Yellow</option>
+          <option value="white" style="background: white; color: black;">White</option>
+        </select>
+        <button type="submit">Next</button>
+      </form>
+    </div>
+
+    <div class="mode" id="mode4">
+      <form id="form2">
+        <label for="player2Name">Player 2 Name:</label>
+        <input type="text" id="player2Name" name="name" placeholder="Enter Player 2 Name" autocomplete="username" required/>
+        <label for="colorSelect2">Choose a color:</label>
+        <select id="colorSelect2" name="color" autocomplete="off" required>
+          <option value="red" style="background: red; color: white;">Red</option>
+          <option value="blue" style="background: blue; color: white;">Blue</option>
+          <option value="green" style="background: green; color: white;">Green</option>
+          <option value="pink" style="background: rgb(233, 18, 229); color: black;">Pink</option>
+          <option value="yellow" style="background: yellow; color: black;">Yellow</option>
+          <option value="white" style="background: white; color: black;">White</option>
+        </select>
+        <button type="submit">Next</button>
+      </form>
+    </div>
+
+    <div class="mode" id="mode5">
+      <form id="form3">
+        <label for="player3Name">Player 3 Name:</label>
+        <input type="text" id="player3Name" name="name" placeholder="Enter Player 3 Name" autocomplete="username" required/>
+        <label for="colorSelect3">Choose a color:</label>
+        <select id="colorSelect3" name="color" autocomplete="off" required>
+          <option value="red" style="background: red; color: white;">Red</option>
+          <option value="blue" style="background: blue; color: white;">Blue</option>
+          <option value="green" style="background: green; color: white;">Green</option>
+          <option value="pink" style="background: rgb(233, 18, 229); color: black;">Pink</option>
+          <option value="yellow" style="background: yellow; color: black;">Yellow</option>
+          <option value="white" style="background: white; color: black;">White</option>
+        </select>
+        <button type="submit">Next</button>
+      </form>
+    </div>
+
+    <div class="mode" id="mode6">
+      <form id="form4">
+        <label for="player4Name">Player 4 Name:</label>
+        <input type="text" id="player4Name" name="name" placeholder="Enter Player 4 Name" autocomplete="username" required/>
+        <label for="colorSelect4">Choose a color:</label>
+        <select id="colorSelect4" name="color" autocomplete="off" required>
+          <option value="red" style="background: red; color: white;">Red</option>
+          <option value="blue" style="background: blue; color: white;">Blue</option>
+          <option value="green" style="background: green; color: white;">Green</option>
+          <option value="pink" style="background: rgb(233, 18, 229); color: black;">Pink</option>
+          <option value="yellow" style="background: yellow; color: black;">Yellow</option>
+          <option value="white" style="background: white; color: black;">White</option>
+        </select>
+        <button type="submit">Next</button>
+      </form>
+    </div>
+
+    <div class="mode" id="mode7">
+      <form id="form5">
+        <label for="player5Name">Player 5 Name:</label>
+        <input type="text" id="player5Name" name="name" placeholder="Enter Player 5 Name" autocomplete="username" required/>
+        <label for="colorSelect5">Choose a color:</label>
+        <select id="colorSelect5" name="color" autocomplete="off" required>
+          <option value="red" style="background: red; color: white;">Red</option>
+          <option value="blue" style="background: blue; color: white;">Blue</option>
+          <option value="green" style="background: green; color: white;">Green</option>
+          <option value="pink" style="background: rgb(233, 18, 229); color: black;">Pink</option>
+          <option value="yellow" style="background: yellow; color: black;">Yellow</option>
+          <option value="white" style="background: white; color: black;">White</option>
+        </select>
+        <button type="submit">Next</button>
+      </form>
+    </div>
+
+    <div class="mode" id="mode8">
+      <form id="form6">
+        <label for="player6Name">Player 6 Name:</label>
+        <input type="text" id="player6Name" name="name" placeholder="Enter Player 6 Name" autocomplete="username" required/>
+        <label for="colorSelect6">Choose a color:</label>
+        <select id="colorSelect6" name="color" autocomplete="off" required>
+          <option value="red" style="background: red; color: white;">Red</option>
+          <option value="blue" style="background: blue; color: white;">Blue</option>
+          <option value="green" style="background: green; color: white;">Green</option>
+          <option value="pink" style="background: rgb(233, 18, 229); color: black;">Pink</option>
+          <option value="yellow" style="background: yellow; color: black;">Yellow</option>
+          <option value="white" style="background: white; color: black;">White</option>
+        </select>
+        <button type="submit">Next</button>
+      </form>
+    </div>
+
+    <div class="mode" id="mode9">
+      <button id="startGameButton" style="position: absolute;">
+        <span>Start Game</span>
+        <div class="shine"></div>
+      </button>
+    </div>
+
+    <div id="main_container">
+      <div id="side_controls">
+
+        <div id="icon_holder">
+          <!-- Player Icons added using js -->
+        </div>
+
+        <div class="dice">
+          <button id="rollDice">
+            <img src="images/die_pic.jpg" alt="dice" id="dice_image" />
+          </button>
+          <span id="diceValue">Dice Value : 0</span>
+        </div>
+
+      </div>
+
+      <div id="game_area">
+        <canvas></canvas>
+      </div>
+
+    </div>
+
+    <div class="audio_controls">
+      <div id="playAudio" class="audio_button">
+      </div>
+      <div id="stopAudio" class="audio_button">
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
